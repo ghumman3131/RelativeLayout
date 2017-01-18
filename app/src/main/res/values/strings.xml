@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Demo3</string>
+    <string name="login_btn_text">LOGIN</string>
+    <string name="password_txt">PASSWORD</string>
+</resources>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lal_rang"
+
+
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="venalio"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:textSize="30dp"
+        android:id="@+id/first_text"
+
+        android:textColor="#fff"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/first_text"
+        android:background="@drawable/rounded_rectangle"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/first_linear"
+        android:layout_marginRight="20dp">
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:src="@drawable/user"
+            android:layout_margin="20dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:layout_below="@+id/first_text"
+            android:layout_marginLeft="20dp"
+            android:paddingLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:text="username"
+            android:inputType="number"
+
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/first_linear"
+        android:layout_marginTop="20dp"
+        android:id="@+id/second_linear"
+        android:background="@drawable/rounded_rectangle"
+        android:layout_marginLeft="20dp"
+
+        android:layout_marginRight="20dp">
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:src="@drawable/user"
+            android:layout_margin="20dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:layout_below="@+id/first_text"
+            android:layout_marginLeft="20dp"
+            android:paddingLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:text="username"
+            android:inputType="number"
+
+            />
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/login_btn_text"
+        android:layout_below="@+id/second_linear"
+        android:background="@drawable/rounded_rectangle"
+        android:backgroundTint="#49d71e"
+        android:layout_margin="20dp"
+        android:textColor="@color/lal_rang"
+        android:id="@+id/button"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button"
+        android:weightSum="2">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/password_txt"
+
+        android:textColor="#fff"
+        android:textSize="20dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="register"
+            android:layout_weight="1"
+
+            android:gravity="center"
+            android:textColor="#fff"
+            android:textSize="20dp"
+            />
+
+
+
+    </LinearLayout>
+
+    <TextView
+        android:text="CUSTOM TEXT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/first_text"
+        android:layout_marginBottom="65dp"
+        android:id="@+id/textView" />
+
+
+</RelativeLayout>
